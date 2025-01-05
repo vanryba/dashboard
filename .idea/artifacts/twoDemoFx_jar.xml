@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="twoDemoFx:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/twoDemoFx_jar</output-path>
+    <root id="archive" name="twoDemoFx.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="twoDemoFx.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.2/6f9f8621d8230cd38aa42e58ccbc0c00569131ce/junit-platform-commons-1.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20210307/528c8df3757e8bcf151817b1d7b9b434f6aa08d5/json-20210307.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/21-ea+24/4d231abe1db9b186bb56273f1e90288d42e472c5/javafx-fxml-21-ea+24-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.2/572f7a553b53f83ee59cc045ce1c3772864ab76c/junit-jupiter-engine-5.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.2/40aeef2be7b04f96bb91e8b054affc28b7c7c935/junit-platform-engine-1.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.36/5a30490a6e14977d97d9c73c924c1f1b5311ea95/lombok-1.18.36.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/21-ea+24/7e6d5ace8390e46707b735c5f434c40f2ccdbaa8/javafx-graphics-21-ea+24-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.h2database/h2/2.1.214/d5c2005c9e3279201e12d4776c948578b16bf8b2/h2-2.1.214.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/21-ea+24/3c8039a8f6b22d01d67dbb3264740c6b06f57feb/javafx-controls-21-ea+24-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/21-ea+24/a5392d6ebc7636615b3eeb17d5e2c2779b7ba491/javafx-base-21-ea+24-mac-aarch64.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.2/fed843581520eac594bc36bb4b0f55e7b947dda9/junit-jupiter-api-5.9.2.jar" path-in-jar="/" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>
