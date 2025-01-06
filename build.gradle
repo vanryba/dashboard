@@ -8,7 +8,7 @@ plugins {
 
 group = 'com.example'
 version ='1.0-SNAPSHOT'
-mainClassName = 'com.example.twodemofx.HelloApplication'
+mainClassName = 'com.example.twodemofx.MainApplication'
 
 jar {
     manifest {
@@ -38,7 +38,7 @@ tasks.withType(JavaCompile).configureEach {
 
 application {
     mainModule = 'com.example.twodemofx'
-    mainClass = 'com.example.twodemofx.HelloApplication'
+    mainClass = 'com.example.twodemofx.MainApplication'
 }
 
 javafx {

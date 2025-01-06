@@ -1,6 +1,6 @@
 package com.example.twodemofx.Controllers;
 
-import com.example.twodemofx.HelloController;
+import com.example.twodemofx.MainController;
 import com.example.twodemofx.Model.AddEntryDto;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 public class AddEntryController {
 
-    private HelloController controller;
+    private MainController controller;
 
     @FXML
     private AnchorPane anchor;
@@ -56,7 +56,7 @@ public class AddEntryController {
                 .build();
     }
 
-    public void setController(HelloController controller) {
+    public void setController(MainController controller) {
         this.controller = controller;
     }
 

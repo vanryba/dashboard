@@ -1,6 +1,6 @@
 package com.example.twodemofx.Controllers;
 
-import com.example.twodemofx.HelloController;
+import com.example.twodemofx.MainController;
 import com.example.twodemofx.Model.EntryItemDto;
 
 import javafx.fxml.FXML;
@@ -26,7 +26,7 @@ public class AddContentInVBoxController {
     private static final Logger logger = Logger.getLogger(AddContentInVBoxController.class.getName());
     public AnchorPane anchorPaneOnVbox;
 
-    private HelloController controller;
+    private MainController controller;
 
     private EntryItemDto dto;
 
@@ -96,7 +96,7 @@ public class AddContentInVBoxController {
         }
     }
 
-    public void setValue(EntryItemDto dto, HelloController controller) {
+    public void setValue(EntryItemDto dto, MainController controller) {
         nameEntry.setText(dto.name);
         this.dto = dto;
         this.controller = controller;

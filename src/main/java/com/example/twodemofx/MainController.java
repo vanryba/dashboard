@@ -24,7 +24,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
-public class HelloController {
+public class MainController {
+
+    private Stage stage;
 
     private List<EntryItemDto> items;
 
@@ -33,7 +35,11 @@ public class HelloController {
 
     private static final Logger logger = Logger.getLogger(AddContentInVBoxController.class.getName());
 
-    public HelloController() {
+    public MainController() {
+    }
+
+    public void setStage(Stage stage) {
+        this.stage = stage;
     }
 
     @FXML
@@ -75,6 +81,16 @@ public class HelloController {
         rebootApp.setOnMouseClicked(reboot -> setItem(new RebootService().getItems()));
     }
 
+    @FXML
+    void closeApplication() {
+        stage.close();
+    }
+
+    @FXML
+    void collapseApp() {
+        stage.setIconified(true);
+    }
+
     public void rebootItemsList() {
         List<EntryItemDto> values = db.getEntryItems();
         setVbox(values);
@@ -106,11 +122,11 @@ public class HelloController {
         vBox.getChildren().clear();
         for (EntryItemDto value : values) {
             try {
-                FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("content-for-vBox.fxml"));
+                FXMLLoader loader = new FXMLLoader(MainApplication.class.getResource("content-for-vBox.fxml"));
                 Node valueBlock = loader.load();
 
                 AddContentInVBoxController controller = loader.getController();
-                controller.setValue(value, HelloController.this);
+                controller.setValue(value, MainController.this);
 
                 vBox.getChildren().add(valueBlock);
             } catch (IOException e) {
