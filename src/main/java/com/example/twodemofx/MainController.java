@@ -28,6 +28,9 @@ public class MainController {
 
     private Stage stage;
 
+    private double xOffset = 0;
+    private double yOffset = 0;
+
     private List<EntryItemDto> items;
 
     @Getter
@@ -44,6 +47,15 @@ public class MainController {
 
     @FXML
     private AnchorPane actionDashboard;
+
+    @FXML
+    private AnchorPane mainAnchor;
+
+    @FXML
+    private AnchorPane leftBoard;
+
+    @FXML
+    private AnchorPane entryAnchor;
 
     @FXML
     private Label calendar;
@@ -89,6 +101,33 @@ public class MainController {
     @FXML
     void collapseApp() {
         stage.setIconified(true);
+    }
+
+    @FXML
+    void entryAnchorPressed() {
+        movingWindow(entryAnchor);
+    }
+
+    @FXML
+    void leftBoardPressed() {
+        movingWindow(leftBoard);
+    }
+
+    @FXML
+    void mainAnchorPressed() {
+        movingWindow(mainAnchor);
+    }
+
+    private void movingWindow(AnchorPane anchor) {
+        anchor.setOnMousePressed(event -> {
+            yOffset = event.getSceneY();
+            xOffset = event.getSceneX();
+        });
+
+        anchor.setOnMouseDragged(event -> {
+            stage.setX(event.getScreenX() - xOffset);
+            stage.setY(event.getScreenY() - yOffset);
+        });
     }
 
     public void rebootItemsList() {

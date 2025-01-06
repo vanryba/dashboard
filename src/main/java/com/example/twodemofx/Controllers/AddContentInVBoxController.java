@@ -133,5 +133,4 @@ public class AddContentInVBoxController {
             default -> throw new UnsupportedOperationException("Неизвестная операционная система");
         };
     }
-
 }
